@@ -1,0 +1,33 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": ["smells"],
+    "rules": {
+        "linebreak-style": ["error", "unix"],
+        "no-console": 1,
+        "flowtype/generic-spacing": 0,
+        "flowtype/space-after-type-colon": 0,
+        "smells/no-switch": 1,
+        "smells/no-complex-switch-case": 1,
+        "smells/no-setinterval": 1,
+        "smells/no-this-assign": 1,
+        "smells/no-complex-string-concat": 1
+    },
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": true
+        },
+        "react": {
+            "version": "16.8"
+        }
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}
