@@ -110,9 +110,6 @@ module.exports = {
     title: process.env.TITLE,
     components: "../src/components/[A-Z]**/*.js",
     ignore: ["**/test.js"],
-    // styleguideComponents: {
-    //     Wrapper: path.resolve(__dirname, "./styleguidist/components/wrapper"),
-    // },
     styleguideDir: path.resolve(__dirname, "../public/___docs"),
     version,
     webpackConfig,
